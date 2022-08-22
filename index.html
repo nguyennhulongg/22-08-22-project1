@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="time-hour">
+            <button class="btnshow" onclick="day()">Today is?</button>
+            <p id="today"></p>
+        </div>
+        <div class="time-minutes">
+            <button class="btnshow" onclick="hour_minute()">Current time is</button>
+            <p id="hour"></p>
+        </div>
+    </div>
+    <script>
+        function day() {
+            let b = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+            const D = new Date();
+            const Z = b[D.getDay()];
+            document.getElementById("today").innerHTML = "Today is:" + " " + Z;
+        }
+        
+        function hour_minute() {
+            let c = new Date();
+            let m = new Date();
+            document.getElementById("hour").innerHTML = "Current time is:" + " " + c.getHours() + "h" + " " + m.getMinutes() + "p"
+        }
+    </script>
+</body>
+</html>
