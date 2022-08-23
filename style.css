@@ -4,6 +4,7 @@
     border-radius: 5px;
     height: 50px;
     width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .time-hour {
@@ -12,4 +13,8 @@
 
 .time-minutes {
     display: flex;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
